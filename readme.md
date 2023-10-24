@@ -11,7 +11,7 @@ This repository encompasses MainApis, searchUIApis, the search_engine_algorithm,
 3. **Launching the APIs:** Run `app1.py` from both the MainApis and searchUIApis directories in separate terminal instances.
    
 4. **Unity Project Configuration:** 
-   - Navigate to the Unity project directory.
+   - Navigate to the Unity project directory. (As the project is very large it not been attached)
    - Update the API endpoint with the appropriate IP address.
    - Subsequently, build the application and deploy it to the VR headset.
    
