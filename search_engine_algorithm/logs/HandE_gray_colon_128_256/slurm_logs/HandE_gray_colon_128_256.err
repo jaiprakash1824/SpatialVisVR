@@ -1,0 +1,117 @@
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/model.py:104: UnderReviewWarning: The feature VAE is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  super(CustomVAE, self).__init__(
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/basic_vae.py:88: UnderReviewWarning: The feature resnet18_encoder is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  self.encoder = valid_encoders[enc_type]["enc"](first_conv, maxpool1)
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:334: UnderReviewWarning: The feature ResNetEncoder is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  return ResNetEncoder(EncoderBlock, [2, 2, 2, 2], first_conv, maxpool1)
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:236: UnderReviewWarning: The feature EncoderBlock is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  layers.append(block(self.inplanes, planes, stride, downsample))
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:56: UnderReviewWarning: The feature conv3x3 is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  self.conv1 = conv3x3(inplanes, planes, stride)
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:231: UnderReviewWarning: The feature conv1x1 is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  conv1x1(self.inplanes, planes * block.expansion, stride),
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/basic_vae.py:89: UnderReviewWarning: The feature resnet18_decoder is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  self.decoder = valid_encoders[enc_type]["dec"](self.latent_dim, self.input_height, first_conv, maxpool1)
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:339: UnderReviewWarning: The feature ResNetDecoder is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  return ResNetDecoder(DecoderBlock, [2, 2, 2, 2], latent_dim, input_height, first_conv, maxpool1)
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:301: UnderReviewWarning: The feature resize_conv1x1 is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  resize_conv1x1(self.inplanes, planes * block.expansion, scale),
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:45: UnderReviewWarning: The feature Interpolate is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  return nn.Sequential(Interpolate(scale_factor=scale), conv1x1(in_planes, out_planes))
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:306: UnderReviewWarning: The feature DecoderBlock is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  layers.append(block(self.inplanes, planes, scale, upsample))
+/home/axh5735/projects/VR/Inference/Inference_H&E/Model/component.py:132: UnderReviewWarning: The feature resize_conv3x3 is currently marked under review. The compatibility with other Lightning projects is not guaranteed and API may change at any time. The API and functionality may change without warning in future releases. More details: https://lightning-bolts.readthedocs.io/en/latest/stability.html
+  self.conv1 = resize_conv3x3(inplanes, inplanes)
+/home/axh5735/projects/VR/Inference/Inference_H&E/utils.py:382: RuntimeWarning: invalid value encountered in divide
+  cropped_img=cropped_img/Max
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:875: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
+  value = pd.Index(value)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:850: UserWarning: 
+AnnData expects .obs.index to contain strings, but got values like:
+    [0, 1, 2, 3, 4]
+
+    Inferred to be: integer
+
+  value_idx = self._prep_dim_index(value.index, attr)
+/home/axh5735/miniconda3/envs/IC/lib/python3.10/site-packages/anndata/_core/anndata.py:183: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
