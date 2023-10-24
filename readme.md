@@ -16,7 +16,7 @@ This repository encompasses MainApis, searchUIApis, the search_engine_algorithm,
    - Subsequently, build the application and deploy it to the VR headset.
    
 5. **Search Execution (Optional):** 
-   - To initiate a search, launch the Droid Cam application on your smartphone. 
+   - To initiate a search, launch the Droid Cam or ip webcam application on your smartphone. 
    - Execute `PathologyPipeline.py` from the `search_engine_algorithm` directory. This activates the phone's camera.
    - Focus the camera on the desired slide.
    - In the VR application, tap the "update" button to synchronize and display the search results.
