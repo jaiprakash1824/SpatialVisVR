@@ -2,6 +2,10 @@
 
 This repository encompasses MainApis, searchUIApis, the search_engine_algorithm, and a compressed Unity project complete with an apk file. To effectively deploy and test the project, follow the step-by-step guide provided below.
 
+# Our Approach
+
+![alt text](./demo/overview.png)
+
 ### Execution Steps:
 
 1. **Network Connectivity:** Ensure all devices are connected to the same Wi-Fi network.
