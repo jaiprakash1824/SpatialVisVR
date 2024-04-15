@@ -26,3 +26,6 @@ This repository encompasses MainApis, searchUIApis, the search_engine_algorithm,
    - In the VR application, tap the "update" button to synchronize and display the search results.
 
 By adhering to this guide, users can seamlessly visualize spatial data in a virtual reality environment.
+
+### Results
+![alt text](./demo/SpatialVisVR.mp4)
